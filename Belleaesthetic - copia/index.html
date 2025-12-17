@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Belle Aesthetic - Tu centro de estética y belleza. Tratamientos faciales, corporales y turismo estético.">
+    <title>Belle Aesthetic | Centro de Estética Profesional</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="img/Logo-letra-transparente.png" alt="Belle Aesthetic Medical Center">
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="turismo-estetico.html">Turismo Estético</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO MODIFICADO: Imagen y texto separados -->
+    <section class="hero">
+        <div class="hero-image-container">
+            <div class="hero-image-overlay"></div>
+            <img src="img/hero_logo_image.png" alt="Hero Image">
+        </div>
+    </section>
+
+    <section class="hero-text-content">
+        <div class="container">
+            <h1>Descubre tu mejor versión</h1>
+            <p>Tratamientos estéticos avanzados para realzar tu belleza natural.</p>
+            <div class="hero-buttons">
+                <a href="turismo-estetico.html" class="btn btn-primary">Descubre nuestros servicios</a>
+                <a href="https://wa.me/+573116188733" class="btn btn-primary" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Escríbenos al WhatsApp</a>
+                <a href="https://www.instagram.com/belle.estetica.med?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="btn btn-primary" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> Síguenos en Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN GALERÍA DE LA CLÍNICA -->
+    <section class="section clinic-gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <br>
+                <h2>Nuestras Instalaciones</h2>
+                <p>Espacios diseñados para tu comodidad y bienestar</p>
+                <br>
+            </div>
+
+            <div class="clinic-carousel-container">
+                <div class="clinic-carousel-track">
+                    <div class="clinic-slide active">
+                        <img src="img/clinic_reception2.jpg" alt="Recepción Belle Aesthetic">
+                        <div class="slide-caption">
+                            <h3>Recepción</h3>
+                            <p>Ambiente acogedor desde tu llegada</p>
+                        </div>
+                    </div>
+                    <div class="clinic-slide">
+                        <img src="img/clinic_treatment.jpg" alt="Sala de Tratamiento">
+                        <div class="slide-caption">
+                            <h3>Sala de Tratamiento</h3>
+                            <p>Equipamiento de última generación</p>
+                        </div>
+                    </div>
+
+                    <div class="clinic-slide">
+                        <img src="img/clinic_equipment.jpg" alt="Tecnología Avanzada">
+                        <div class="slide-caption">
+                            <h3>Tecnología Avanzada</h3>
+                            <p>Equipos de vanguardia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="clinic-carousel-controls">
+                    <button class="clinic-prev-btn" title="Anterior"><i class="fas fa-chevron-left"></i></button>
+                    <button class="clinic-next-btn" title="Siguiente"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="clinic-carousel-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN ANTES Y DESPUÉS -->
+    <section class="section before-after-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Resultados Reales</h2>
+                <p>Desliza para ver la transformación</p>
+            </div>
+
+            <!-- Contenedor principal para múltiples antes y después -->
+            <div class="before-after-grid">
+                <!-- Ejemplo 1 -->
+                <div class="before-after-item">
+                    <div class="before-after-container">
+                        <!-- Imagen de DESPUÉS (fondo) - ESTA ES LA IMAGEN QUE SE MUESTRA CUANDO EL SLIDER ESTÁ A LA DERECHA -->
+                        <div class="img-background">
+                            <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Antes tratamiento facial">
+                            <span class="label label-before">Antes</span>
+                        </div>
+                        <!-- Imagen de ANTES (superpuesta, visible a la izquierda) - ESTA ES LA IMAGEN QUE SE MUESTRA CUANDO EL SLIDER ESTÁ A LA IZQUIERDA -->
+                        <div class="img-foreground">
+                            <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Después tratamiento facial" style="filter: brightness(1.2) contrast(1.1);">
+                            <span class="label label-after">Después</span>
+                        </div>
+                        <div class="slider-handle">
+                            <div class="handle-line"></div>
+                            <div class="handle-circle">
+                                <i class="fas fa-arrows-alt-h"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result-description">
+                        <h4>Tratamiento Facial</h4>
+                        <p>Mejora de textura y luminosidad</p>
+                    </div>
+                </div>
+
+                <!-- Ejemplo 2 -->
+                <div class="before-after-item">
+                    <div class="before-after-container">
+                        <!-- Imagen de DESPUÉS (fondo) -->
+                        <div class="img-background">
+                            <img src="https://images.unsplash.com/photo-1536922246289-88c42f957773?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Antes reducción de celulitis">
+                            <span class="label label-before">Antes</span>
+                        </div>
+                        <!-- Imagen de ANTES (superpuesta) -->
+                        <div class="img-foreground">
+                            <img src="https://images.unsplash.com/photo-1595675024853-0f3ec9098ac7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Después reducción de celulitis" style="filter: brightness(1.1) contrast(1.05);">
+                            <span class="label label-after">Después</span>
+                        </div>
+                        <div class="slider-handle">
+                            <div class="handle-line"></div>
+                            <div class="handle-circle">
+                                <i class="fas fa-arrows-alt-h"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result-description">
+                        <h4>Tratamiento Corporal</h4>
+                        <p>Reducción de celulitis y firmeza</p>
+                    </div>
+                </div>
+
+                <!-- Ejemplo 3 -->
+                <div class="before-after-item">
+                    <div class="before-after-container">
+                        <!-- Imagen de DESPUÉS (fondo) -->
+                        <div class="img-background">
+                            <img src="https://images.unsplash.com/photo-1556228453-efd58f80b2a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Antes contorno facial">
+                            <span class="label label-before">Antes</span>
+                        </div>
+                        <!-- Imagen de ANTES (superpuesta) -->
+                        <div class="img-foreground">
+                            <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Después contorno facial" style="filter: brightness(1.15) contrast(1.1);">
+                            <span class="label label-after">Después</span>
+                        </div>
+                        <div class="slider-handle">
+                            <div class="handle-line"></div>
+                            <div class="handle-circle">
+                                <i class="fas fa-arrows-alt-h"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result-description">
+                        <h4>Contorno Facial</h4>
+                        <p>Definición y rejuvenecimiento</p>
+                    </div>
+                </div>
+            </div>
+
+            <p style="text-align: center; margin-top: 20px; font-style: italic; color: var(--light-text);">* Resultados
+                pueden variar según el paciente.</p>
+        </div>
+    </section>
+
+    <!-- SECCIÓN TESTIMONIOS -->
+    <section class="section testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <br>
+                <h2>Lo Que Dicen Nuestros Clientes</h2>
+                <p>Resultados reales de pacientes felices</p>
+                <br>
+            </div>
+
+            <!-- NUEVA SECCIÓN DE GOOGLE REVIEWS -->
+            <div class="google-reviews-container">
+                <div class="google-rating-summary">
+                    <div class="google-logo-row">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                            alt="Google Logo">
+                        <span>Reviews</span>
+                    </div>
+                    <div class="rating-score">
+                        <span class="score">4.9</span>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <a href="https://www.google.com/maps/place/Belle+Est%C3%A9tica/@6.211684,-75.5722352,1515m/data=!3m1!1e3!4m8!3m7!1s0x8e44291fd43aca4d:0x8823d7e0e0a4244c!8m2!3d6.211602!4d-75.569183!9m1!1b1!16s%2Fg%2F11krt_5r4g?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D"
+                        target="_blank" rel="noopener" class="review-link">Ver nuestras reseñas</a>
+                </div>
+
+                <div class="google-reviews-grid">
+                    <!-- Reseña 1 -->
+                    <div class="google-review-card">
+                        <div class="review-header">
+                            <img src="img/review-helen.jpg" alt="Foto de Helen Gallego Bedoya" class="reviewer-photo">
+                            <div class="reviewer-info">
+                                <h4>Helen Gallego Bedoya</h4>
+                                <span class="review-date">Hace 4 meses</span>
+                            </div>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+                                alt="G" class="google-icon-small">
+                        </div>
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">Super recomendó, excelente servicio y de muy buena calidad.
+                            Me realice el botox y me fue super bien
+                            Volví y me hicieron el endolifting, estoy encantada.</p>
+                    </div>
+
+                    <!-- Reseña 2 -->
+                    <div class="google-review-card">
+                        <div class="review-header">
+                            <img src="img/review-abel.jpg" alt="Foto de Abel Garmendia" class="reviewer-photo">
+                            <div class="reviewer-info">
+                                <h4>Abel Garmendia</h4>
+                                <span class="review-date">Hace 2 semanas</span>
+                            </div>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+                                alt="G" class="google-icon-small">
+                        </div>
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">Excelente ! Se lo recomendare a todo el mundo ! Me ha dejado como nuevo ,
+                            repetiré seguro !</p>
+                    </div>
+
+                    <!-- Reseña 3 -->
+                    <div class="google-review-card">
+                        <div class="review-header">
+                            <img src="img/review-carolina.jpg" alt="Foto de Carolina Hecht" class="reviewer-photo">
+                            <div class="reviewer-info">
+                                <h4>Carolina Hecht</h4>
+                                <span class="review-date">Hace 4 meses</span>
+                            </div>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+                                alt="G" class="google-icon-small">
+                        </div>
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">Catalina es fantástica, excelente servicio, conoce mucho de piel y los
+                            mejores productos para mi, me encantó el servicio
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="google-reviews-cta">
+                    <a href="https://www.google.com/maps/place/Belle+Est%C3%A9tica/@6.211684,-75.5722352,1515m/data=!3m1!1e3!4m8!3m7!1s0x8e44291fd43aca4d:0x8823d7e0e0a4244c!8m2!3d6.211602!4d-75.569183!9m1!1b1!16s%2Fg%2F11krt_5r4g?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D"
+                        target="_blank" class="btn btn-outline-dark" rel="noopener noreferrer">
+                        <i class="fab fa-google"></i> Escribir una reseña
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN EXPERIENCIA PREMIUM (GRID) -->
+    <section class="section premium-experience" style="background-color: #000000;">
+        <div class="container">
+            <div class="section-header">
+                <br>
+                <h2>Experiencia Premium</h2>
+                <p>Tecnología, confort y exclusividad en un solo lugar</p>
+                <br>
+            </div>
+
+            <div class="bento-grid">
+                <div class="grid-item item-1">
+                    <div class="grid-content">
+                        <i class="fas fa-microchip gold-icon"></i>
+                        <h3>Tecnología de Punta</h3>
+                        <p>Equipos de última generación para resultados seguros.</p>
+                    </div>
+                </div>
+                <div class="grid-item item-2">
+                    <div class="grid-content">
+                        <i class="fas fa-spa gold-icon"></i>
+                        <h3>Espacios Relajantes</h3>
+                        <p>Diseñados para tu máxima comodidad y paz mental.</p>
+                    </div>
+                </div>
+                <div class="grid-item item-3 gold-card">
+                    <div class="grid-content">
+                        <i class="fas fa-star"></i>
+                        <h3>Atención VIP</h3>
+                        <p>Personal dedicado 100% a tu bienestar.</p>
+                    </div>
+                </div>
+                <div class="grid-item item-4">
+                    <div class="grid-content">
+                        <i class="fas fa-map-marked-alt gold-icon"></i>
+                        <h3>Ubicación Privilegiada</h3>
+                        <p>En el corazón de la zona más exclusiva.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>¿Lista para el cambio?</h2>
+            <p>Contáctanos hoy y recibe una valoración gratuita.</p>
+            <a href="https://wa.me/+573116188733" class="btn btn-white"><i class="fab fa-whatsapp"></i> Escríbenos
+                al
+                WhatsApp</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3>Belle<span>Aesthetic</span></h3>
+                <p>Tu destino para la belleza y el bienestar integral.</p>
+                <div class="social-links">
+                    <a href="#" title="Síguenos en Facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" title="Síguenos en Instagram" aria-label="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="#" title="Síguenos en TikTok" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="turismo-estetico.html">Turismo Estético</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Cl 11A #42 68, El Poblado, Medellín, Antioquia</p>
+                <p><i class="fas fa-phone"></i> +57 311 6188733 </p>
+                <p><i class="fas fa-envelope"></i> info@belleaesthetic.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Belle Aesthetic. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/+573116188733" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+        title="Contáctanos por WhatsApp" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a href="https://www.instagram.com/belle.estetica.med?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="instagram-float" target="_blank" rel="noopener noreferrer"
+        title="Síguenos en Instagram" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
